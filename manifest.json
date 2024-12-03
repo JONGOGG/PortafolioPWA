@@ -1,0 +1,19 @@
+{
+    "name": "Portafolio",
+    "short_name": "Portafolio",
+   "start_url":"./?_source=web_app_manifest",
+    "display": "standalone",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "img/apple-icon-120x120.png",
+            "type": "image/png",
+            "sizes": "120x120"
+        },
+        {
+            "src": "img/android-icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ]
+}

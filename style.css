@@ -1,0 +1,129 @@
+:root {
+    --color-fondo: #f4f4f4;
+    --color-texto: #333;
+    --color-primario: #000;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: var(--color-texto);
+    background-color: var(--color-fondo);
+    padding-top: 70px;
+    line-height: 1.6;
+}
+
+.navbar-fijo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1030;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.inicio {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-color: #ffffff;
+}
+
+.perfil-img {
+    max-width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--color-primario);
+}
+
+.proyectos-grid,
+.certificados-grid,
+.habilidades-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.tarjeta-base {
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.tarjeta-base:hover {
+    transform: translateY(-10px);
+}
+
+.tarjeta-base img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.habilidad-item {
+    display: inline-block;
+    background-color: #f1f1f1;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.contacto-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.contacto-item i {
+    margin-right: 10px;
+    width: 25px;
+    text-align: center;
+}
+
+
+.tecnologia-item {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+
+.tecnologia-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .perfil-img {
+        max-width: 150px;
+        height: 150px;
+    }
+
+    .hero-responsive h1 {
+        font-size: 2rem;
+    }
+
+    .proyectos-grid,
+    .certificados-grid,
+    .habilidades-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tarjeta-base {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+}
